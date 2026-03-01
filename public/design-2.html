@@ -1,0 +1,544 @@
+<html lang="en" vid="0"><head vid="1">
+    <meta charset="UTF-8" vid="2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" vid="3">
+    <title vid="4">Sattvic Roots | The Cookbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" vid="5">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" vid="6">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet" vid="7">
+    
+    <style vid="8">
+        :root {
+            
+            --bg-color: #F7F6F2; 
+            --text-primary: #181818; 
+            --text-secondary: #555555;
+            --accent-gold: #D4C5A3; 
+            --accent-warm: #C8B29E; 
+            
+            
+            --unit: 8px;
+            --container-width: 1400px;
+            --padding-x: 6vw;
+            
+            
+            --font-display: 'Playfair Display', serif;
+            --font-ui: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-ui);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            cursor: default;
+        }
+
+        
+        .atmosphere {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.6;
+            animation: float 20s infinite ease-in-out alternate;
+        }
+
+        .orb-1 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-gold) 0%, transparent 70%);
+            top: -10%;
+            left: -10%;
+        }
+
+        .orb-2 {
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, var(--accent-warm) 0%, transparent 70%);
+            bottom: -20%;
+            right: -10%;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(40px, 60px); }
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem var(--padding-x);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            mix-blend-mode: multiply;
+        }
+
+        .brand {
+            font-family: var(--font-ui);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.9rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        
+        .btn-oval {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            border: 1px solid var(--text-primary);
+            border-radius: 100px; 
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            position: relative;
+            overflow: hidden;
+            background: transparent;
+        }
+
+        .btn-oval:hover {
+            background: var(--text-primary);
+            color: var(--bg-color);
+            transform: scale(1.02);
+        }
+
+        
+        .hero {
+            min-height: 100vh;
+            padding: 0 var(--padding-x);
+            display: grid;
+            grid-template-columns: 1.5fr 1fr; 
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-content {
+            padding-top: 10vh;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 9vw, 11rem); 
+            font-weight: 400;
+            line-height: 0.9;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s;
+        }
+
+        h1 span {
+            display: block;
+        }
+
+        h1 .italic {
+            font-style: italic;
+            font-weight: 400;
+            margin-left: 1.5rem; 
+        }
+
+        .hero-sub {
+            font-family: var(--font-ui);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            max-width: 320px;
+            margin-top: 2rem;
+            margin-left: 5px;
+            opacity: 0;
+            animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.6s;
+        }
+
+        
+        .scroll-badge {
+            position: absolute;
+            right: var(--padding-x);
+            bottom: 15vh;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .scroll-text {
+            width: 100%;
+            height: 100%;
+            animation: rotate 15s linear infinite;
+        }
+
+        .scroll-text text {
+            font-family: var(--font-ui);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            fill: var(--text-primary);
+        }
+
+        .arrow-down {
+            position: absolute;
+            height: 60px;
+            width: 1px;
+            background-color: var(--text-primary);
+            bottom: -80px; 
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .arrow-head {
+            position: absolute;
+            bottom: 0;
+            left: -4px;
+            width: 8px;
+            height: 8px;
+            border-right: 1px solid var(--text-primary);
+            border-bottom: 1px solid var(--text-primary);
+            transform: rotate(45deg);
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        
+        .section-intro {
+            padding: 10rem var(--padding-x);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .intro-visual {
+            position: relative;
+            height: 600px;
+            width: 100%;
+            background-color: #E8E6DF; 
+            overflow: hidden;
+            border-radius: 2px; 
+        }
+
+        .intro-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+            filter: grayscale(20%); 
+            transition: transform 1.5s ease;
+        }
+
+        .intro-visual:hover img {
+            transform: scale(1.05);
+        }
+
+        .intro-text {
+            padding-top: 4rem;
+        }
+
+        .intro-label {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1.5rem;
+            display: block;
+            color: var(--text-secondary);
+        }
+
+        .intro-header {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .intro-body {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            max-width: 400px;
+            margin-bottom: 3rem;
+        }
+
+        
+        .recipe-list {
+            padding: 5rem var(--padding-x);
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .list-row {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            padding: 2.5rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1); 
+            align-items: baseline;
+            transition: padding 0.3s ease;
+            cursor: pointer;
+        }
+
+        .list-row:hover {
+            padding-left: 1rem;
+            background: rgba(255,255,255,0.4);
+        }
+
+        .chapter-num {
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .chapter-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        .chapter-meta {
+            text-align: right;
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        
+        footer {
+            padding: 8rem var(--padding-x) 4rem;
+            text-align: center;
+        }
+
+        .footer-cta {
+            font-family: var(--font-display);
+            font-size: 5vw;
+            line-height: 1;
+            margin-bottom: 3rem;
+            display: block;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: opacity 0.3s;
+        }
+
+        .footer-cta:hover {
+            opacity: 0.7;
+        }
+
+        .copyright {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 4rem;
+        }
+
+        
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        
+        @media (max-width: 1024px) {
+            h1 { font-size: 6rem; }
+            .hero { grid-template-columns: 1fr; padding-bottom: 5rem; }
+            .section-intro { grid-template-columns: 1fr; }
+            .scroll-badge { display: none; }
+        }
+
+    </style>
+</head>
+<body vid="9">
+
+    
+    <div class="atmosphere" vid="10">
+        <div class="orb orb-1" vid="11"></div>
+        <div class="orb orb-2" vid="12"></div>
+    </div>
+
+    
+    <nav vid="13">
+        <div class="brand" vid="14">Sattvic Roots</div>
+        <div class="nav-links" vid="15">
+            <a href="#" vid="16">The Practice</a>
+            <a href="#" vid="17">Amma's Kitchen</a>
+            <a href="#" vid="18">Journal</a>
+        </div>
+        <a href="#" class="btn-oval" vid="19">Pre-order Volume I</a>
+    </nav>
+
+    
+    <section class="hero" vid="20">
+        <div class="hero-content" vid="21">
+            <h1 vid="22">
+                <span vid="23">Heirlooms</span>
+                <span class="italic" vid="24">of the spirit</span>
+                <span vid="25">&amp; soil</span>
+            </h1>
+            <div class="hero-sub" vid="26">
+                <p vid="27">Thirty years of yoga practice distilled into recipes from Amma’s kitchen. A culinary guide to alignment, breath, and nourishment.</p>
+            </div>
+        </div>
+
+        
+        
+        
+        
+        <div class="scroll-badge" vid="28">
+            <div class="scroll-text" vid="29">
+                <svg viewBox="0 0 100 100" width="100" height="100" vid="30">
+                    <defs vid="31">
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" vid="32"></path>
+                    </defs>
+                    <text font-size="11" vid="33">
+                        <textPath xlink:href="#circle" vid="34">
+                            SCROLL DOWN • DISCOVER • SCROLL DOWN •
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <div class="arrow-down" vid="35">
+                <div class="arrow-head" vid="36"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section-intro" vid="37">
+        <div class="intro-visual reveal-on-scroll" vid="38">
+            
+            <img src="https://images.unsplash.com/photo-1606914469725-e3966047a52f?q=80&amp;w=2000&amp;auto=format&amp;fit=crop" alt="Ingredients on a stone table" vid="39">
+        </div>
+        <div class="intro-text reveal-on-scroll" vid="40">
+            <span class="intro-label" vid="41">The Philosophy</span>
+            <h2 class="intro-header" vid="42">Where discipline meets flavor.</h2>
+            <p class="intro-body" vid="43">
+                My mother didn't just cook; she alchemized. In "Sattvic Roots," I trace the lineage of my 30-year yoga practice back to the spices of her stovetop. This is not just a collection of recipes, but a methodology for living lightly.
+            </p>
+            <a href="#" class="btn-oval" vid="44">Read the Story</a>
+        </div>
+    </section>
+
+    
+    <section class="recipe-list reveal-on-scroll" vid="45">
+        <div class="list-row" vid="46">
+            <span class="chapter-num" vid="47">01</span>
+            <span class="chapter-title" vid="48">Morning Rituals</span>
+            <span class="chapter-meta" vid="49">12 Recipes</span>
+        </div>
+        <div class="list-row" vid="50">
+            <span class="chapter-num" vid="51">02</span>
+            <span class="chapter-title" vid="52">The Noon Sun</span>
+            <span class="chapter-meta" vid="53">Sustenance</span>
+        </div>
+        <div class="list-row" vid="54">
+            <span class="chapter-num" vid="55">03</span>
+            <span class="chapter-title" vid="56">Evening Rest</span>
+            <span class="chapter-meta" vid="57">Digestion</span>
+        </div>
+        <div class="list-row" vid="58">
+            <span class="chapter-num" vid="59">04</span>
+            <span class="chapter-title" vid="60">The Spice Cabinet</span>
+            <span class="chapter-meta" vid="61">Essentials</span>
+        </div>
+    </section>
+
+    
+    <footer vid="62">
+        <a href="#" class="footer-cta reveal-on-scroll" vid="63">Reserve your copy</a>
+        <div class="copyright" vid="64">
+            © 2026 Sattvic Roots. Design tribute to Antara.
+        </div>
+    </footer>
+
+    <script vid="65">
+        
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        
+        document.addEventListener('mousemove', (e) => {
+            const orbs = document.querySelectorAll('.orb');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            orbs.forEach((orb, index) => {
+                const speed = index === 0 ? 20 : -20;
+                orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+
+</body></html>
