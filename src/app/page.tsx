@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 const designs = [
+  { src: "/design-3.html", label: "The Asana Palate" },
   { src: "/design-1.html", label: "The Sattvic Kitchen" },
   { src: "/design-2.html", label: "Sattvic Roots" },
-  { src: "/design-3.html", label: "The Asana Palate" },
 ];
 
 export default function Home() {
