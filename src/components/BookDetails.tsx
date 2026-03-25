@@ -1,0 +1,122 @@
+import PreOrderButton from "./PreOrderButton";
+
+export default function BookDetails() {
+  return (
+    <section id="the-book" className="py-20 lg:py-28">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        {/* Section kicker */}
+        <p className="mb-4 text-center font-[family-name:var(--font-sans)] text-[0.78rem] font-medium uppercase tracking-[0.16em] text-text-muted">
+          The Book
+        </p>
+        {/* <h2 className="mx-auto mb-6 max-w-xl text-center font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3.4rem)] font-medium leading-tight text-brass-dark">
+          Food for the Soul
+        </h2> */}
+        {/* <p className="mx-auto mb-14 max-w-lg text-center text-lg leading-relaxed text-text-muted">
+          A lovingly crafted collection of sattvic recipes from Kerala,
+          shaped by 30 years of yoga practice and the unforgettable
+          flavours of Amma&rsquo;s kitchen.
+        </p> */}
+
+        {/* Main card */}
+        <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[rgba(255,250,243,0.8)] shadow-[0_20px_50px_var(--shadow)]">
+          <div className="grid items-center gap-0 lg:grid-cols-2">
+            {/* Book cover side */}
+            <div className="relative flex items-center justify-center bg-gradient-to-br from-brass/[0.06] to-brass/[0.02] p-6 sm:p-8 lg:p-10">
+              <div className="pointer-events-none absolute -top-20 -left-20 h-60 w-60 rounded-full bg-brass/[0.06] blur-[80px]" />
+              <div className="relative w-full max-w-sm">
+                <img
+                  src="/book-cover.png"
+                  alt="Food for the Soul — book cover"
+                  className="relative z-10 w-full rounded-xl shadow-[0_20px_60px_rgba(45,38,33,0.25)]"
+                  style={{ filter: "saturate(0.9) contrast(0.96) brightness(1.03)" }}
+                />
+                <div className="absolute -bottom-3 left-1/2 h-6 w-4/5 -translate-x-1/2 rounded-full bg-brass-dark/10 blur-xl" />
+              </div>
+            </div>
+
+            {/* Details side */}
+            <div className="px-8 py-10 sm:px-10 lg:px-14 lg:py-16">
+              {/* Stats row */}
+              <div className="mb-10 flex flex-wrap justify-between gap-y-6 border-b border-brass/10 pb-10">
+                {[
+                  { label: "Recipes", value: "80+" },
+                  { label: "Pages", value: "256" },
+                  { label: "Format", value: "Softcover" },
+                  { label: "Pre-launch\nprice", value: "₹799", cut: "₹999" },
+                ].map((item) => (
+                  <div key={item.label} className="text-center">
+                    <p className={`font-[family-name:var(--font-display)] text-[clamp(1.6rem,2.5vw,2.2rem)] font-semibold ${"cut" in item ? "text-emerald-700" : "text-brass-dark"}`}>
+                      {"cut" in item && (
+                        <span className="mr-1.5 text-[0.65em] font-normal text-text-muted/60 line-through">
+                          {(item as any).cut}
+                        </span>
+                      )}
+                      {item.value}
+                    </p>
+                    <p className={`mt-0.5 whitespace-pre-line font-[family-name:var(--font-sans)] text-[0.65rem] font-medium uppercase tracking-[0.14em] ${"cut" in item ? "text-emerald-700/70" : "text-text-muted"}`}>
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Metadata grid */}
+              {/* <div className="mb-10 grid grid-cols-2 gap-x-8 gap-y-5">
+                {[
+                  { label: "Author", value: "Arun Pandala" },
+                  { label: "Cuisine", value: "Kerala / Sattvic" },
+                  { label: "ISBN", value: "978-81-9822-732-4" },
+                  { label: "Tradition", value: "Sivananda Yoga" },
+                ].map((item) => (
+                  <div key={item.label}>
+                    <p className="font-[family-name:var(--font-sans)] text-[0.65rem] font-medium uppercase tracking-[0.14em] text-text-muted">
+                      {item.label}
+                    </p>
+                    <p className="mt-0.5 font-[family-name:var(--font-display)] text-[1.05rem] text-brass-dark">
+                      {item.value}
+                    </p>
+                  </div>
+                ))}
+              </div> */}
+
+              {/* Publisher + CTAs */}
+              <div className="flex flex-wrap items-center gap-4">
+                <PreOrderButton className="inline-flex items-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all hover:shadow-xl hover:brightness-110">
+                  Pre-order Your Copy
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </PreOrderButton>
+                {/* <a
+                  href="#"
+                  className="inline-flex items-center gap-2 rounded-full border border-brass/25 px-6 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-brass-dark transition-all hover:border-brass/40 hover:bg-brass/5"
+                >
+                  Read Sample Chapter
+                </a> */}
+                <div className="ml-auto text-center">
+                  <img
+                    src="/DK_(2020).svg"
+                    alt="DK (Dorling Kindersley)"
+                    className="mx-auto h-8 w-auto opacity-60"
+                  />
+                  <p className="mt-1 font-[family-name:var(--font-sans)] text-[0.65rem] font-medium uppercase tracking-[0.12em] text-text-muted">
+                    Publisher
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
