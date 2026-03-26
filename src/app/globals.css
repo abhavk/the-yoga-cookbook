@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f4f0e8;
-  --bg-elevated: #fbf7f1;
-  --text: #40352b;
-  --text-muted: #6f604f;
-  --brass: #8b6a3f;
-  --brass-dark: #6f542f;
-  --brass-light: #b08a55;
-  --stone: #b8aea0;
-  --shadow: rgba(45, 38, 33, 0.12);
+  --bg: #eee7dc;
+  --bg-elevated: #f3ebde;
+  --text: #362c23;
+  --text-muted: #5f5244;
+  --brass: #7b5d38;
+  --brass-dark: #624a2a;
+  --brass-light: #9d7b4d;
+  --stone: #a79b8c;
+  --shadow: rgba(36, 30, 26, 0.16);
 
   --radius-lg: 24px;
   --radius-xl: 32px;
@@ -32,7 +32,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #f8f5ef 0%, #efe8dc 100%);
+  background: linear-gradient(180deg, #f0e8dc 0%, #e2d7c7 100%);
   background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-body), "EB Garamond", Georgia, serif;
