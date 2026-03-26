@@ -14,6 +14,12 @@ export default function PreOrderButton({
   className,
 }: PreOrderButtonProps) {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
+    const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    ) || (navigator.maxTouchPoints > 1 && window.innerWidth < 768);
+
+    if (isMobile) return;
+
     e.preventDefault();
 
     const width = 480;
