@@ -14,24 +14,20 @@ export default function PreOrderButton({
   className,
 }: PreOrderButtonProps) {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    ) || (navigator.maxTouchPoints > 1 && window.innerWidth < 768);
-
-    if (isMobile) return;
-
-    e.preventDefault();
-
     const width = 480;
     const height = 720;
     const left = Math.round(window.screenX + (window.outerWidth - width) / 2);
     const top = Math.round(window.screenY + (window.outerHeight - height) / 2);
 
-    window.open(
+    const popup = window.open(
       PAYMENT_URL,
       "instamojo_checkout",
       `width=${width},height=${height},left=${left},top=${top},toolbar=no,menubar=no,scrollbars=yes,resizable=yes`
     );
+
+    if (popup) {
+      e.preventDefault();
+    }
   };
 
   return (
