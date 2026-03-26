@@ -2,7 +2,7 @@
 
 import { type ReactNode, type MouseEvent } from "react";
 
-const PAYMENT_URL = "https://imjo.in/QaaAAJ";
+const PAYMENT_URL = "https://imjo.in/q7KjA2";
 
 interface PreOrderButtonProps {
   children: ReactNode;
