@@ -2,7 +2,7 @@ import PreOrderButton from "./PreOrderButton";
 
 export default function BookDetails() {
   return (
-    <section id="the-book" className="py-20 lg:py-28">
+    <section id="the-book" className="scroll-mt-[-10px] py-14 lg:py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Section kicker */}
         <p className="mb-4 text-center font-[family-name:var(--font-sans)] text-[0.78rem] font-medium uppercase tracking-[0.16em] text-text-muted">
@@ -35,84 +35,62 @@ export default function BookDetails() {
             </div>
 
             {/* Details side */}
-            <div className="px-8 py-10 sm:px-10 lg:px-14 lg:py-16">
+            <div className="px-8 py-8 sm:px-10 lg:px-14 lg:py-10">
               {/* Stats row */}
-              <div className="mb-10 flex flex-wrap justify-between gap-y-6 border-b border-brass/10 pb-10">
+              <div className="mb-6 grid grid-cols-3 gap-6 border-b border-brass/10 pb-6">
                 {[
                   { label: "Recipes", value: "80+" },
                   { label: "Pages", value: "256" },
                   { label: "Format", value: "Softcover" },
-                  { label: "Pre-launch\nprice", value: "₹799", cut: "₹999" },
                 ].map((item) => (
                   <div key={item.label} className="text-center">
-                    <p className={`font-[family-name:var(--font-display)] text-[clamp(1.6rem,2.5vw,2.2rem)] font-semibold ${"cut" in item ? "text-emerald-700" : "text-brass-dark"}`}>
-                      {"cut" in item && (
-                        <span className="mr-1.5 text-[0.65em] font-normal text-text-muted/60 line-through">
-                          {(item as any).cut}
-                        </span>
-                      )}
+                    <p className="font-[family-name:var(--font-display)] text-[clamp(1.6rem,2.5vw,2.2rem)] font-semibold text-brass-dark">
                       {item.value}
                     </p>
-                    <p className={`mt-0.5 whitespace-pre-line font-[family-name:var(--font-sans)] text-[0.65rem] font-medium uppercase tracking-[0.14em] ${"cut" in item ? "text-emerald-700/70" : "text-text-muted"}`}>
+                    <p className="mt-0.5 font-[family-name:var(--font-sans)] text-[0.65rem] font-medium uppercase tracking-[0.14em] text-text-muted">
                       {item.label}
                     </p>
                   </div>
                 ))}
               </div>
 
-              {/* Metadata grid */}
-              {/* <div className="mb-10 grid grid-cols-2 gap-x-8 gap-y-5">
-                {[
-                  { label: "Author", value: "Arun Pandala" },
-                  { label: "Cuisine", value: "Kerala / Sattvic" },
-                  { label: "ISBN", value: "978-81-9822-732-4" },
-                  { label: "Tradition", value: "Sivananda Yoga" },
-                ].map((item) => (
-                  <div key={item.label}>
-                    <p className="font-[family-name:var(--font-sans)] text-[0.65rem] font-medium uppercase tracking-[0.14em] text-text-muted">
-                      {item.label}
-                    </p>
-                    <p className="mt-0.5 font-[family-name:var(--font-display)] text-[1.05rem] text-brass-dark">
-                      {item.value}
-                    </p>
-                  </div>
-                ))}
-              </div> */}
-
-              {/* Publisher + CTAs */}
-              <div className="flex flex-wrap items-center gap-4">
-                <PreOrderButton className="inline-flex items-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all hover:shadow-xl hover:brightness-110">
-                  Pre-order Your Copy
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </PreOrderButton>
-                {/* <a
-                  href="#"
-                  className="inline-flex items-center gap-2 rounded-full border border-brass/25 px-6 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-brass-dark transition-all hover:border-brass/40 hover:bg-brass/5"
-                >
-                  Read Sample Chapter
-                </a> */}
-                <div className="ml-auto text-center">
+              {/* Price + Publisher */}
+              <div className="mb-6 flex items-center gap-4">
+                <div className="shrink-0">
+                  <span className="font-[family-name:var(--font-display)] text-sm font-normal text-text-muted/60 line-through">₹999</span>
+                  <span className="ml-1.5 font-[family-name:var(--font-display)] text-2xl font-semibold text-emerald-700 sm:text-3xl">₹799</span>
+                  <p className="mt-0.5 font-[family-name:var(--font-sans)] text-[0.6rem] font-medium uppercase tracking-[0.14em] text-emerald-700/70">
+                    Pre-launch price
+                  </p>
+                </div>
+                <div className="ml-auto shrink-0 text-center">
                   <img
                     src="/DK_(2020).svg"
                     alt="DK (Dorling Kindersley)"
-                    className="mx-auto h-8 w-auto opacity-60"
+                    className="mx-auto h-7 w-auto opacity-60 sm:h-8"
                   />
-                  <p className="mt-1 font-[family-name:var(--font-sans)] text-[0.65rem] font-medium uppercase tracking-[0.12em] text-text-muted">
+                  <p className="mt-1 font-[family-name:var(--font-sans)] text-[0.6rem] font-medium uppercase tracking-[0.12em] text-text-muted sm:text-[0.65rem]">
                     Publisher
                   </p>
                 </div>
               </div>
+
+              {/* CTA */}
+              <PreOrderButton className="inline-flex w-full items-center justify-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all hover:shadow-xl hover:brightness-110 sm:w-auto">
+                Pre-Order Your Copy
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </PreOrderButton>
             </div>
           </div>
         </div>

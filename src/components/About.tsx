@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 lg:py-28">
+    <section id="about" className="py-14 lg:py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Section kicker */}
         <p className="mb-4 text-center font-[family-name:var(--font-sans)] text-[0.78rem] font-medium uppercase tracking-[0.16em] text-text-muted">
@@ -34,7 +34,7 @@ export default function About() {
 
           <div className="bg-[rgba(255,250,243,0.8)] px-8 py-12 sm:px-12 sm:py-16 lg:px-16">
             <p className="mx-auto mb-12 max-w-2xl text-center font-[family-name:var(--font-sans)] text-[0.8rem] font-medium uppercase tracking-[0.16em] text-text-muted">
-              Yogic Wisdom Meets Amma&rsquo;s Kitchen
+              Yogic Wisdom Finds Rest In Amma&rsquo;s Kitchen
             </p>
 
             <div className="mx-auto grid max-w-3xl gap-14 md:grid-cols-2">
@@ -53,12 +53,12 @@ export default function About() {
               <div className="text-center md:text-left">
                 <div className="mx-auto mb-4 h-px w-10 bg-gradient-to-r from-transparent via-brass/40 to-transparent md:mx-0 md:bg-gradient-to-r md:from-brass/40 md:to-transparent" />
                 <h4 className="mb-3 font-[family-name:var(--font-display)] text-[clamp(1.3rem,2vw,1.7rem)] font-medium text-brass-dark">
-                  Sattvic &amp; Soulful
+                  Satvic &amp; Soulful
                 </h4>
                 <p className="text-[0.95rem] leading-relaxed text-text-muted">
                   Spices tempered in coconut oil, the aroma of curry leaves, and
                   meals prepared with quiet devotion. Rooted in Kerala&rsquo;s
-                  sattvic tradition.
+                  satvic tradition.
                 </p>
               </div>
             </div>

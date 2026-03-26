@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Publisher */}
           <div className="md:text-right">
             <p className="mb-2 font-[family-name:var(--font-sans)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-text-muted">
-              Published by
+              Publisher
             </p>
             <img
               src="/DK_(2020).svg"

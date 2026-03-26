@@ -9,7 +9,7 @@ const recipes = [
   {
     name: "Olan",
     desc: "A gentle ash gourd and black-eyed pea stew in thin coconut milk, finished with coconut oil.",
-    tag: "Sattvic",
+    tag: "Satvic",
     image: "/Olan.png",
     position: "center 85%",
   },
@@ -24,7 +24,7 @@ const recipes = [
 
 export default function Recipes() {
   return (
-    <section id="recipes" className="py-20 lg:py-28">
+    <section id="recipes" className="py-14 lg:py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <p className="mb-4 text-center font-[family-name:var(--font-sans)] text-[0.78rem] font-medium uppercase tracking-[0.16em] text-text-muted">
           A Taste of What Awaits

@@ -1,22 +1,31 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(false);
+
+  const getThreshold = useCallback(() => {
+    const hero = document.querySelector("section");
+    return hero ? hero.offsetTop + hero.offsetHeight * 0.5 : window.innerHeight;  }, []);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setVisible(window.scrollY > getThreshold());
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    window.addEventListener("resize", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, [getThreshold]);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300 ${
-        scrolled
-          ? "bg-[rgba(251,247,241,0.95)] shadow-[0_1px_12px_var(--shadow)]"
-          : "bg-[rgba(248,245,239,0.7)]"
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-[transform,box-shadow,background-color] duration-300 ease-out ${
+        visible
+          ? "translate-y-0 bg-[rgba(251,247,241,0.95)] shadow-[0_1px_12px_var(--shadow)]"
+          : "-translate-y-full pointer-events-none bg-transparent shadow-none"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
@@ -40,7 +49,7 @@ export default function Header() {
           href="#the-book"
           className="shrink-0 rounded-full border border-brass/30 px-4 py-2 font-[family-name:var(--font-sans)] text-xs font-medium text-brass-dark transition-all hover:border-brass/50 hover:bg-brass/5 sm:px-5 sm:text-sm"
         >
-          Pre-order
+          Pre-Order
         </a>
       </div>
     </header>
