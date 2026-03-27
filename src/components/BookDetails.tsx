@@ -57,7 +57,6 @@ export default function BookDetails() {
               {/* Price + Publisher */}
               <div className="mb-6 flex items-center gap-4">
                 <div className="shrink-0">
-                  <span className="font-[family-name:var(--font-display)] text-sm font-normal text-text-muted/60 line-through">₹999</span>
                   <span className="ml-1.5 font-[family-name:var(--font-display)] text-2xl font-semibold text-emerald-700 sm:text-3xl">₹799</span>
                   <p className="mt-0.5 font-[family-name:var(--font-sans)] text-[0.6rem] font-medium uppercase tracking-[0.14em] text-emerald-700/70">
                     Pre-launch price
