@@ -30,6 +30,13 @@ export default function Hero() {
           className="order-2 flex flex-wrap items-center justify-center gap-5 lg:hidden"
           style={{ animation: "breatheIn 0.8s ease-out 0.3s both" }}
         >
+          <a
+            href="#about"
+            className="group relative inline-flex items-center px-5 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium tracking-wide text-brass-dark/75 transition-colors duration-300 hover:text-brass-dark"
+          >
+            Discover the Story
+            <span className="absolute bottom-2.5 left-5 right-5 h-px origin-left scale-x-0 bg-gradient-to-r from-brass/30 to-brass/10 transition-transform duration-500 ease-out group-hover:scale-x-100" />
+          </a>
           <PreOrderButton className="group inline-flex w-full justify-center items-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(139,106,63,0.4)] sm:w-auto">
             Pre-Order Now
             <svg
@@ -46,13 +53,6 @@ export default function Hero() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </PreOrderButton>
-          <a
-            href="#about"
-            className="group relative inline-flex items-center px-5 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium tracking-wide text-brass-dark/75 transition-colors duration-300 hover:text-brass-dark"
-          >
-            Discover the Story
-            <span className="absolute bottom-2.5 left-5 right-5 h-px origin-left scale-x-0 bg-gradient-to-r from-brass/30 to-brass/10 transition-transform duration-500 ease-out group-hover:scale-x-100" />
-          </a>
         </div>
 
         {/* Text column */}
@@ -84,6 +84,13 @@ export default function Hero() {
             className="hidden flex-wrap items-center gap-5 lg:flex"
             style={{ animation: "breatheIn 0.8s ease-out 0.6s both" }}
           >
+            <a
+              href="#about"
+              className="group relative inline-flex items-center px-5 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium tracking-wide text-brass-dark/75 transition-colors duration-300 hover:text-brass-dark"
+            >
+              Discover the Story
+              <span className="absolute bottom-2.5 left-5 right-5 h-px origin-left scale-x-0 bg-gradient-to-r from-brass/30 to-brass/10 transition-transform duration-500 ease-out group-hover:scale-x-100" />
+            </a>
             <PreOrderButton className="group inline-flex items-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(139,106,63,0.4)]">
               Pre-Order Now
               <svg
@@ -100,13 +107,6 @@ export default function Hero() {
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </PreOrderButton>
-            <a
-              href="#about"
-              className="group relative inline-flex items-center px-5 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium tracking-wide text-brass-dark/75 transition-colors duration-300 hover:text-brass-dark"
-            >
-              Discover the Story
-              <span className="absolute bottom-2.5 left-5 right-5 h-px origin-left scale-x-0 bg-gradient-to-r from-brass/30 to-brass/10 transition-transform duration-500 ease-out group-hover:scale-x-100" />
-            </a>
           </div>
         </div>
 
