@@ -26,10 +26,10 @@ export default function About() {
               </div>
             </div>
 
-            <div className="relative mx-auto -mt-6 max-w-2xl px-4 pb-2 sm:-mt-8 sm:px-6 lg:-mt-10">
+            <div className="relative mx-auto -mt-6 max-w-2xl px-4 pb-2 sm:-mt-8 sm:px-6 lg:-mt-10 lg:max-w-3xl">
               <div className="rounded-[2rem] border border-brass/[0.14] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,248,239,0.92)_100%)] px-6 py-5 text-center shadow-[0_18px_50px_rgba(111,84,47,0.12)] backdrop-blur-sm sm:px-8 sm:py-6">
                 <div className="mx-auto mb-3 h-px w-14 bg-gradient-to-r from-transparent via-brass/45 to-transparent" />
-                <p className="font-[family-name:var(--font-display)] text-[1.05rem] leading-relaxed text-brass-dark sm:text-[1.15rem]">
+                <p className="font-[family-name:var(--font-display)] text-[1rem] leading-relaxed text-brass-dark sm:text-[1.08rem] lg:text-[1.02rem]">
                   After Amma&rsquo;s passing in 2021, Arun turned to her kitchen and its memories to shape this book &mdash; a tribute to a life of selfless service, nurturing, and quiet strength.
                 </p>
                 <p className="mt-3 text-[0.92rem] leading-relaxed text-text-muted sm:text-[0.98rem]">
