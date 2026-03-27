@@ -13,22 +13,29 @@ export default function About() {
 
         {/* Amma image + continuation — one unified block */}
         <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12]">
-          <div className="relative h-80 w-full sm:h-96 lg:h-[42rem]">
-            <img
-              src="/amma.png"
-              alt="Amma — Arun Pandala's mother"
-              className="h-full w-full object-cover object-top"
-              style={{ filter: "saturate(0.85) contrast(0.95) brightness(1.05)" }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#2a2118]/90 via-[#2a2118]/30 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 px-8 pb-8 pt-20 text-left sm:px-12 sm:pb-12 lg:px-16 lg:pb-14">
-              <p className="max-w-md text-[0.95rem] leading-relaxed text-[#fffaf2]/80">
-                After Amma&rsquo;s passing in 2021, Arun turned to her kitchen
-                and its memories to shape this book &mdash; a tribute to a life
-                of selfless service, nurturing, and quiet strength. Every recipe
-                carries the love and devotion of a
-                mother who nourished everyone around her.
-              </p>
+          <div className="bg-[linear-gradient(180deg,rgba(255,252,247,0.35)_0%,rgba(255,250,243,0)_18%)] px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
+            <div className="overflow-hidden rounded-[calc(var(--radius-xl)-0.35rem)] shadow-[0_24px_80px_rgba(45,38,33,0.16)] ring-1 ring-white/40">
+              <div className="relative h-80 w-full sm:h-96 lg:h-[42rem]">
+                <img
+                  src="/amma.png"
+                  alt="Amma — Arun Pandala's mother"
+                  className="h-full w-full object-cover object-top"
+                  style={{ filter: "saturate(0.85) contrast(0.95) brightness(1.05)" }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2a2118]/18 via-transparent to-transparent" />
+              </div>
+            </div>
+
+            <div className="relative mx-auto -mt-6 max-w-2xl px-4 pb-2 sm:-mt-8 sm:px-6 lg:-mt-10">
+              <div className="rounded-[2rem] border border-brass/[0.14] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,248,239,0.92)_100%)] px-6 py-5 text-center shadow-[0_18px_50px_rgba(111,84,47,0.12)] backdrop-blur-sm sm:px-8 sm:py-6">
+                <div className="mx-auto mb-3 h-px w-14 bg-gradient-to-r from-transparent via-brass/45 to-transparent" />
+                <p className="font-[family-name:var(--font-display)] text-[1.05rem] leading-relaxed text-brass-dark sm:text-[1.15rem]">
+                  After Amma&rsquo;s passing in 2021, Arun turned to her kitchen and its memories to shape this book &mdash; a tribute to a life of selfless service, nurturing, and quiet strength.
+                </p>
+                <p className="mt-3 text-[0.92rem] leading-relaxed text-text-muted sm:text-[0.98rem]">
+                  Every recipe carries the love and devotion of a mother who nourished everyone around her.
+                </p>
+              </div>
             </div>
           </div>
 
