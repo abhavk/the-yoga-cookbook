@@ -1,5 +1,7 @@
 "use client";
 
+import PreOrderButton from "./PreOrderButton";
+
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[rgba(251,247,241,0.95)] shadow-[0_1px_12px_var(--shadow)] backdrop-blur-md">
@@ -20,12 +22,9 @@ export default function Header() {
           ))}
         </nav>
 
-        <a
-          href="#the-book"
-          className="shrink-0 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-4 py-2 font-[family-name:var(--font-sans)] text-xs font-medium text-[#fffaf2] shadow-lg transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(139,106,63,0.4)] sm:px-5 sm:text-sm"
-        >
+        <PreOrderButton className="shrink-0 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-4 py-2 font-[family-name:var(--font-sans)] text-xs font-medium text-[#fffaf2] shadow-lg transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(139,106,63,0.4)] sm:px-5 sm:text-sm">
           Pre-Order
-        </a>
+        </PreOrderButton>
       </div>
     </header>
   );
