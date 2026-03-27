@@ -37,7 +37,7 @@ export default function Footer() {
               </p>
               <div className="space-y-2">
                 {[
-                  { label: "Sivananda Yoga Centre", href: "https://yogashowstheway.com" },
+                  { label: "Sivananda Yoga Centre, Gurgaon", href: "https://yogashowstheway.com" },
                   { label: "Instagram", href: "https://www.instagram.com/sivanandagurgaon" },
                   { label: "YouTube", href: "https://www.youtube.com/@sivanandayogacentregurgaon" },
                   { label: "Contact", href: "https://wa.me/919810645850" },
