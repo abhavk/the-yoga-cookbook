@@ -13,7 +13,7 @@ export default function BookDetails() {
         </h2> */}
         {/* <p className="mx-auto mb-14 max-w-lg text-center text-lg leading-relaxed text-text-muted">
           A lovingly crafted collection of sattvic recipes from Kerala,
-          shaped by 30 years of yoga practice and the unforgettable
+          shaped by 60 years of yoga practice and the unforgettable
           flavours of Amma&rsquo;s kitchen.
         </p> */}
 

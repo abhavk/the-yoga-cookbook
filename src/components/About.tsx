@@ -41,7 +41,7 @@ export default function About() {
               <div className="text-center md:text-left">
                 <div className="mx-auto mb-4 h-px w-10 bg-gradient-to-r from-transparent via-brass/40 to-transparent md:mx-0 md:bg-gradient-to-r md:from-brass/40 md:to-transparent" />
                 <h4 className="mb-3 font-[family-name:var(--font-display)] text-[clamp(1.3rem,2vw,1.7rem)] font-medium text-brass-dark">
-                  30 Years of Tradition
+                  60 Years of Tradition
                 </h4>
                 <p className="text-[0.95rem] leading-relaxed text-text-muted">
                   Born from Arun&rsquo;s memories of Amma&rsquo;s daily cooking,
