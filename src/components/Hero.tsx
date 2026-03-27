@@ -2,7 +2,7 @@ import PreOrderButton from "./PreOrderButton";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-start overflow-hidden pt-6 pb-10 sm:pt-8">
+    <section className="relative flex min-h-screen items-start overflow-hidden pt-28 pb-10 sm:pt-32">
       {/* Decorative warm orbs */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-32 -right-32 h-[500px] w-[500px] rounded-full bg-[#d4b87a]/10 blur-[120px]" />

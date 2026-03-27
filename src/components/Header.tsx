@@ -22,7 +22,7 @@ export default function Header() {
 
         <a
           href="#the-book"
-          className="shrink-0 rounded-full border border-brass/30 px-4 py-2 font-[family-name:var(--font-sans)] text-xs font-medium text-brass-dark transition-all hover:border-brass/50 hover:bg-brass/5 sm:px-5 sm:text-sm"
+          className="shrink-0 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-4 py-2 font-[family-name:var(--font-sans)] text-xs font-medium text-[#fffaf2] shadow-lg transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(139,106,63,0.4)] sm:px-5 sm:text-sm"
         >
           Pre-Order
         </a>
