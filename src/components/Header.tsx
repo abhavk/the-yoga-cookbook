@@ -1,33 +1,8 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-
 export default function Header() {
-  const [visible, setVisible] = useState(false);
-
-  const getThreshold = useCallback(() => {
-    const hero = document.querySelector("section");
-    return hero ? hero.offsetTop + hero.offsetHeight * 0.5 : window.innerHeight;  }, []);
-
-  useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > getThreshold());
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-    };
-  }, [getThreshold]);
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-[transform,box-shadow,background-color] duration-300 ease-out ${
-        visible
-          ? "translate-y-0 bg-[rgba(251,247,241,0.95)] shadow-[0_1px_12px_var(--shadow)]"
-          : "-translate-y-full pointer-events-none bg-transparent shadow-none"
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[rgba(251,247,241,0.95)] shadow-[0_1px_12px_var(--shadow)] backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#" className="shrink-0 font-[family-name:var(--font-display)] text-lg font-medium tracking-wide text-brass-dark sm:text-xl">
           FOOD for the SOUL
