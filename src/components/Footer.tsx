@@ -57,14 +57,14 @@ export default function Footer() {
           </div>
 
           {/* Publisher */}
-          <div className="md:text-right">
+          <div className="text-center md:text-center">
             <p className="mb-2 font-[family-name:var(--font-sans)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-text-muted">
               Publisher
             </p>
             <img
               src="/DK_(2020).svg"
               alt="DK (Dorling Kindersley)"
-              className="h-8 w-auto opacity-60 md:ml-auto"
+              className="mx-auto h-8 w-auto opacity-60"
             />
           </div>
         </div>
