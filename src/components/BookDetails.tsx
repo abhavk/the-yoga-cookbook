@@ -40,7 +40,7 @@ export default function BookDetails() {
               <div className="mb-6 grid grid-cols-3 gap-6 border-b border-brass/10 pb-6">
                 {[
                   { label: "Recipes", value: "80+" },
-                  { label: "Pages", value: "256" },
+                  { label: "Pages", value: "192" },
                   { label: "Format", value: "Softcover" },
                 ].map((item) => (
                   <div key={item.label} className="text-center">
