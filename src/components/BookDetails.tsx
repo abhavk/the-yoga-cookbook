@@ -59,7 +59,7 @@ export default function BookDetails() {
                 <div className="shrink-0">
                   <span className="ml-1.5 font-[family-name:var(--font-display)] text-2xl font-semibold text-emerald-700 sm:text-3xl">₹799</span>
                   <p className="mt-0.5 font-[family-name:var(--font-sans)] text-[0.6rem] font-medium uppercase tracking-[0.14em] text-emerald-700/70">
-                    Pre-launch price
+                    Exclusive pre-launch price
                   </p>
                 </div>
                 <div className="ml-auto shrink-0 text-center">
