@@ -38,7 +38,7 @@ export default function Hero() {
             <span className="absolute bottom-2.5 left-5 right-5 h-px origin-left scale-x-0 bg-gradient-to-r from-brass/30 to-brass/10 transition-transform duration-500 ease-out group-hover:scale-x-100" />
           </a>
           <PreOrderButton className="group inline-flex w-full justify-center items-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(139,106,63,0.4)] sm:w-auto">
-            Go Live
+            Pre-Order Now
             <svg
               width="15"
               height="15"
@@ -92,7 +92,7 @@ export default function Hero() {
               <span className="absolute bottom-2.5 left-5 right-5 h-px origin-left scale-x-0 bg-gradient-to-r from-brass/30 to-brass/10 transition-transform duration-500 ease-out group-hover:scale-x-100" />
             </a>
             <PreOrderButton className="group inline-flex items-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all duration-300 ease-out hover:scale-[1.03] hover:shadow-[0_6px_24px_rgba(139,106,63,0.4)]">
-              Go Live
+              Pre-Order Now
               <svg
                 width="15"
                 height="15"
