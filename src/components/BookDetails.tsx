@@ -76,7 +76,7 @@ export default function BookDetails() {
 
               {/* CTA */}
               <PreOrderButton className="inline-flex w-full items-center justify-center gap-2.5 rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-7 py-3.5 font-[family-name:var(--font-sans)] text-sm font-medium text-[#fffaf2] shadow-lg transition-all hover:shadow-xl hover:brightness-110 sm:w-auto">
-                Pre-Order Your Copy
+                Go Live
                 <svg
                   width="16"
                   height="16"
