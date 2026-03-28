@@ -90,6 +90,9 @@ export default function BookDetails() {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </PreOrderButton>
+              <p className="mt-3 text-sm text-text-muted">
+                *Packing and shipping extra
+              </p>
             </div>
           </div>
         </div>
