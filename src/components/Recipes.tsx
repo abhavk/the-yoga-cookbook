@@ -65,6 +65,10 @@ export default function Recipes() {
             </div>
           ))}
         </div>
+
+        <p className="mx-auto mt-8 max-w-3xl text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
+          ...and many more authentic Satvik recipes that nourish the soul. Once you order the book, you&rsquo;ll be able to explore the detailed recipes, lovingly shared with step-by-step guidance and heartfelt tradition.
+        </p>
       </div>
     </section>
   );
