@@ -66,9 +66,24 @@ export default function Recipes() {
           ))}
         </div>
 
-        <p className="mx-auto mt-8 max-w-3xl text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
-          ...and more than 60 authentic Satvic recipes that nourish the soul. Once you order the book, you&rsquo;ll be able to explore the detailed recipes, lovingly shared with step-by-step guidance and heartfelt tradition. Be the first few to support this book project. A pioneer helps to open the way for others to follow. A part of the proceeds of the book will go to the underprivileged but magical chefs in the kitchen who have never ending troubles and large families to feed. I thank you on their behalf.
-        </p>
+        <div className="mx-auto mt-8 max-w-5xl space-y-8">
+          <p className="text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
+            ...and more than 60 authentic Satvic recipes that nourish the soul. Once you order the book, you&rsquo;ll be able to explore the detailed recipes, lovingly shared with step-by-step guidance and heartfelt tradition.
+          </p>
+
+          <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[rgba(255,250,243,0.8)] shadow-[0_16px_40px_var(--shadow)]">
+            <img
+              src="/author.png"
+              alt="Group photo from the book"
+              className="h-full w-full object-cover"
+              style={{ filter: "saturate(0.92) contrast(0.97) brightness(1.02)" }}
+            />
+          </div>
+
+          <p className="text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
+            Be the first few to support this book project. A pioneer helps to open the way for others to follow. A part of the proceeds of the book will go to the underprivileged but magical chefs in the kitchen who have never ending troubles and large families to feed. I thank you on their behalf.
+          </p>
+        </div>
       </div>
     </section>
   );
