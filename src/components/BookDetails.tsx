@@ -65,6 +65,9 @@ export default function BookDetails() {
                 />
                 <div className="absolute -bottom-3 left-1/2 h-6 w-4/5 -translate-x-1/2 rounded-full bg-brass-dark/10 blur-xl" />
               </div>
+                <p className="mt-6 text-center text-sm leading-relaxed text-text-muted sm:text-base">
+                  If you need more copies for gifting or sharing with family and friends, simply click the + button to reach your desired quantity before clicking pay.
+                </p>
             </div>
 
             {/* Details side */}
@@ -139,9 +142,6 @@ export default function BookDetails() {
                     />
                   </div>
 
-                  <p className="border-t border-brass/10 px-6 py-4 text-base leading-relaxed text-text-muted sm:px-8 sm:text-lg">
-                    If you need more copies for gifting or sharing with family and friends, simply click the + button to reach your desired quantity before clicking pay.
-                  </p>
 
                   <p className="border-t border-brass/10 px-6 py-3 text-sm text-text-muted sm:px-8">
                     If the checkout does not load in this box,{" "}
