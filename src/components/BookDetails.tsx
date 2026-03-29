@@ -222,7 +222,7 @@ export default function BookDetails() {
                     </svg>
                   </PreOrderButton>
                   <p className="mt-3 text-sm text-text-muted">
-                    *Packing and shipping extra
+                    *The book will be available for sale in the fourth week of April 2026. I will personally communicate when it is ready for shipping and let you know the charges then. Arun
                   </p>
                 </>
               )}
