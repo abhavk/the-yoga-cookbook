@@ -139,7 +139,7 @@ export default function BookDetails() {
                     />
                   </div>
 
-                  <p className="border-t border-brass/10 px-6 py-3 text-sm text-text-muted sm:px-8">
+                  <p className="border-t border-brass/10 px-6 py-4 text-base leading-relaxed text-text-muted sm:px-8 sm:text-lg">
                     If you need more copies for gifting or sharing with family and friends, simply click the + button to reach your desired quantity before clicking pay.
                   </p>
 
