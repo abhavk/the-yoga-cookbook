@@ -71,11 +71,11 @@ export default function Recipes() {
             ...and more than 60 authentic Satvic recipes that nourish the soul. Once you order the book, you&rsquo;ll be able to explore the detailed recipes, lovingly shared with step-by-step guidance and heartfelt tradition.
           </p>
 
-          <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[rgba(255,250,243,0.8)] shadow-[0_16px_40px_var(--shadow)]">
+          <div className="mx-auto max-w-sm overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[rgba(255,250,243,0.8)] shadow-[0_16px_40px_var(--shadow)]">
             <img
               src="/author.png"
               alt="Group photo from the book"
-              className="h-full w-full object-cover"
+              className="block w-full"
               style={{ filter: "saturate(0.92) contrast(0.97) brightness(1.02)" }}
             />
           </div>
