@@ -140,6 +140,10 @@ export default function BookDetails() {
                   </div>
 
                   <p className="border-t border-brass/10 px-6 py-3 text-sm text-text-muted sm:px-8">
+                    If you need more copies for gifting or sharing with family and friends, simply click the + button to reach your desired quantity before clicking pay.
+                  </p>
+
+                  <p className="border-t border-brass/10 px-6 py-3 text-sm text-text-muted sm:px-8">
                     If the checkout does not load in this box,{" "}
                     <a
                       href={PAYMENT_URL}
