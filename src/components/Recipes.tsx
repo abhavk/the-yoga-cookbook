@@ -72,7 +72,9 @@ export default function Recipes() {
           </p>
 
           <p className="text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
-            Be among the first to support this book project. A pioneer helps open the way for others to follow. A part of the proceeds from the book will go to the underprivileged but magical chefs in the kitchen who have never-ending troubles and large families to feed. I thank you on their behalf.
+            Be among the first to support this book project. A pioneer helps open the way for others to follow. A part of the proceeds from the book will go to the underprivileged but magical chefs in the kitchen who have never-ending troubles and large families to feed.
+            <br />
+            I thank you on their behalf.
           </p>
         </div>
       </div>
