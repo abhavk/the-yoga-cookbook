@@ -61,12 +61,12 @@ export default function BookDetails() {
                   <img
                     src="/book-cover.png"
                     alt="Food for the Soul — book cover"
-                    className="relative z-10 w-[72%] rounded-xl shadow-[0_20px_60px_rgba(45,38,33,0.25)] mx-auto"
+                    className="relative z-10 w-[64.8%] rounded-xl shadow-[0_20px_60px_rgba(45,38,33,0.25)] mx-auto"
                     style={{ filter: "saturate(0.9) contrast(0.96) brightness(1.03)" }}
                   />
                   <div className="absolute -bottom-3 left-1/2 h-6 w-4/5 -translate-x-1/2 rounded-full bg-brass-dark/10 blur-xl" />
                 </div>
-                <p className="mt-6 text-center text-sm leading-relaxed text-text-muted sm:text-base">
+                <p className="mt-6 text-center text-sm leading-relaxed font-bold text-text-muted sm:text-base">
                   If you need more copies for gifting or sharing with family and friends, simply click the + button to reach your desired quantity before clicking Pay.
                 </p>
               </div>
