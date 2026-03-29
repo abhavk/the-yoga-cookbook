@@ -182,7 +182,7 @@ export default function BookDetails() {
                   <div className="mb-6 flex items-center gap-4">
                     <div className="shrink-0">
                       <div className="flex items-end gap-2">
-                        <span className="font-[family-name:var(--font-display)] text-lg font-medium text-brass-dark/60 line-through decoration-brass-dark/60 decoration-1 sm:text-xl">
+                        <span className="font-[family-name:var(--font-display)] text-lg font-bold text-brass-dark/60 line-through decoration-brass-dark/60 decoration-1 sm:text-xl">
                           ₹999
                         </span>
                         <span className="font-[family-name:var(--font-display)] text-2xl font-semibold text-emerald-700 sm:text-3xl">
