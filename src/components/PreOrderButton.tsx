@@ -2,7 +2,8 @@
 
 import { type ReactNode, type MouseEvent } from "react";
 
-const PAYMENT_URL = "https://rzp.io/rzp/51eYgpd";
+export const PAYMENT_URL = "https://rzp.io/rzp/JkHFut7Z";
+export const OPEN_CHECKOUT_EVENT = "preorder:open-checkout";
 
 interface PreOrderButtonProps {
   children: ReactNode;
@@ -14,24 +15,27 @@ export default function PreOrderButton({
   className,
 }: PreOrderButtonProps) {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    const width = 480;
-    const height = 720;
-    const left = Math.round(window.screenX + (window.outerWidth - width) / 2);
-    const top = Math.round(window.screenY + (window.outerHeight - height) / 2);
-
-    const popup = window.open(
-      PAYMENT_URL,
-      "instamojo_checkout",
-      `width=${width},height=${height},left=${left},top=${top},toolbar=no,menubar=no,scrollbars=yes,resizable=yes`
-    );
-
-    if (popup) {
-      e.preventDefault();
+    if (
+      e.defaultPrevented ||
+      e.button !== 0 ||
+      e.metaKey ||
+      e.ctrlKey ||
+      e.shiftKey ||
+      e.altKey
+    ) {
+      return;
     }
+
+    e.preventDefault();
+    window.dispatchEvent(new CustomEvent(OPEN_CHECKOUT_EVENT));
+    document.getElementById("the-book")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
   return (
-    <a href={PAYMENT_URL} onClick={handleClick} className={className}>
+    <a href="#the-book" onClick={handleClick} className={className}>
       {children}
     </a>
   );

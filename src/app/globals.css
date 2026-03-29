@@ -62,3 +62,15 @@ h4 {
     transform: translateY(0);
   }
 }
+
+@keyframes checkoutArrowPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(4px);
+  }
+}
