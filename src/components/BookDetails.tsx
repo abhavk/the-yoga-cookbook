@@ -56,18 +56,20 @@ export default function BookDetails() {
             {/* Book cover side */}
             <div className="relative flex h-full items-center justify-center bg-gradient-to-br from-brass/[0.06] to-brass/[0.02] p-6 sm:p-8 lg:p-10">
               <div className="pointer-events-none absolute -top-20 -left-20 h-60 w-60 rounded-full bg-brass/[0.06] blur-[80px]" />
-              <div className="relative w-full max-w-sm">
-                <img
-                  src="/book-cover.png"
-                  alt="Food for the Soul — book cover"
-                  className="relative z-10 w-full rounded-xl shadow-[0_20px_60px_rgba(45,38,33,0.25)]"
-                  style={{ filter: "saturate(0.9) contrast(0.96) brightness(1.03)" }}
-                />
-                <div className="absolute -bottom-3 left-1/2 h-6 w-4/5 -translate-x-1/2 rounded-full bg-brass-dark/10 blur-xl" />
-              </div>
+              <div className="flex w-full max-w-sm flex-col items-center">
+                <div className="relative w-full">
+                  <img
+                    src="/book-cover.png"
+                    alt="Food for the Soul — book cover"
+                    className="relative z-10 w-full rounded-xl shadow-[0_20px_60px_rgba(45,38,33,0.25)]"
+                    style={{ filter: "saturate(0.9) contrast(0.96) brightness(1.03)" }}
+                  />
+                  <div className="absolute -bottom-3 left-1/2 h-6 w-4/5 -translate-x-1/2 rounded-full bg-brass-dark/10 blur-xl" />
+                </div>
                 <p className="mt-6 text-center text-sm leading-relaxed text-text-muted sm:text-base">
                   If you need more copies for gifting or sharing with family and friends, simply click the + button to reach your desired quantity before clicking pay.
                 </p>
+              </div>
             </div>
 
             {/* Details side */}
