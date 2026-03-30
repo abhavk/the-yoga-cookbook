@@ -37,6 +37,12 @@ export default function BookDetails() {
   return (
     <section id="the-book" className="scroll-mt-[-10px] py-14 lg:py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <p className="mx-auto max-w-4xl text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
+            Be among the first to support this book project. A pioneer helps open the way for others to follow. A part of the proceeds from the book will go to the underprivileged but magical chefs in the kitchen who have never-ending troubles and large families to feed.
+            <br />
+            I thank you on their behalf.
+        </p>
+        <div className="mx-auto my-6 h-px w-16 bg-gradient-to-r from-transparent via-brass/35 to-transparent sm:my-8" />
         {/* Section kicker */}
         <p className="mb-4 text-center font-[family-name:var(--font-sans)] text-[0.78rem] font-medium uppercase tracking-[0.16em] text-text-muted">
           The Book

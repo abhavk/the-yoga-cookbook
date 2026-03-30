@@ -14,11 +14,11 @@ const recipes = [
     position: "center 85%",
   },
   {
-    name: "Vermicelli Payasam",
-    desc: "Ghee-roasted vermicelli in cardamom milk with cashews and raisins — served hot in winter, cold in summer.",
-    tag: "Celebration",
-    image: "/vermicelli-payasam.png",
-    position: "center 80%",
+    name: "Varutaracha Pulinkari",
+    desc: "A tangy Kerala curry enriched with roasted coconut and spices, balancing deep warmth with bright tamarind notes.",
+    tag: "Traditional",
+    image: "/varutaracha-pulinkari.png",
+    position: "center center",
   },
 ];
 
@@ -69,12 +69,6 @@ export default function Recipes() {
         <div className="mx-auto mt-8 max-w-5xl space-y-8">
           <p className="text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
             ...and more than 60 authentic Satvic recipes that nourish the soul. Once you order the book, you&rsquo;ll be able to explore the detailed recipes, lovingly shared with step-by-step guidance and heartfelt tradition.
-          </p>
-
-          <p className="text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
-            Be among the first to support this book project. A pioneer helps open the way for others to follow. A part of the proceeds from the book will go to the underprivileged but magical chefs in the kitchen who have never-ending troubles and large families to feed.
-            <br />
-            I thank you on their behalf.
           </p>
         </div>
       </div>

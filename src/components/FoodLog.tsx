@@ -5,7 +5,7 @@ export default function FoodLog() {
         <div className="mx-auto mb-8 max-w-3xl text-center lg:mb-10">
           <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-brass/15 bg-[rgba(255,250,243,0.9)] px-4 py-1.5 font-[family-name:var(--font-sans)] text-[0.82rem] font-semibold uppercase tracking-[0.16em] text-brass-dark shadow-[0_10px_30px_rgba(111,84,47,0.08)]">
             <span className="h-1.5 w-1.5 rounded-full bg-brass" />
-            Food Log 30-03-2026-01
+            Food Log #1: 30-03-2026
           </p>
 
           <h2 className="mx-auto mb-4 max-w-3xl font-[family-name:var(--font-display)] text-[clamp(2.35rem,5vw,4.2rem)] font-medium leading-[0.95] tracking-[0.01em] text-brass-dark">
@@ -41,7 +41,7 @@ export default function FoodLog() {
                   “SO MUCH LOVE!”
                 </p>
                 <p className="mt-2 text-[0.96rem] leading-relaxed text-[#7a6347]">
-                  A student&rsquo;s immediate response to the meal — too meaningful to be visually missed.
+                  A student&rsquo;s spontaneous response that inspired this food log.
                 </p>
               </div>
 
