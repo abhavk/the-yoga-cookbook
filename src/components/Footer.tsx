@@ -1,8 +1,10 @@
+import VisitorCounter from "./VisitorCounter";
+
 export default function Footer() {
   return (
     <footer className="border-t border-brass/10 py-12">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div>
             <p className="mb-2 font-[family-name:var(--font-display)] text-xl font-medium text-brass-dark">
@@ -14,7 +16,7 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex gap-8">
+          <div className="flex gap-8 md:col-span-2">
             <div>
               <p className="mb-3 font-[family-name:var(--font-sans)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-text-muted">
                 Explore
@@ -56,17 +58,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Publisher */}
-          <div className="text-center md:text-center">
-            <p className="mb-2 font-[family-name:var(--font-sans)] text-[0.7rem] font-medium uppercase tracking-[0.14em] text-text-muted">
-              Publisher
-            </p>
-            <img
-              src="/DK_(2020).svg"
-              alt="DK (Dorling Kindersley)"
-              className="mx-auto h-8 w-auto opacity-60"
-            />
-          </div>
+          <VisitorCounter />
         </div>
 
         <div className="mt-10 border-t border-brass/8 pt-6 text-center">
