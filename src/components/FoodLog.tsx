@@ -80,7 +80,7 @@ export default function FoodLog() {
 
               <h2 className="mx-auto mb-4 max-w-3xl font-[family-name:var(--font-display)] text-[clamp(2.35rem,5vw,4.2rem)] font-medium leading-[0.95] tracking-[0.01em] text-brass-dark">
                 <span className="block">Introducing</span>
-                <span className="block font-bold italic">Food for the Soul Kitchen</span>
+                <span className="block">Food for the Soul Kitchen</span>
                 <span className="mt-2 block font-bold italic text-[0.55em] leading-relaxed text-[#6d5232] sm:text-[0.5em]">
                   Only for those in Gurgaon!
                 </span>
