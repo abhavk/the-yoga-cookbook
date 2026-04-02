@@ -79,12 +79,12 @@ export default function FoodLog() {
               </p>
 
               <h2 className="mx-auto mb-4 max-w-3xl font-[family-name:var(--font-display)] text-[clamp(2.35rem,5vw,4.2rem)] font-medium leading-[0.95] tracking-[0.01em] text-brass-dark">
-                Introducing Food for the Soul kitchen
+                <span className="block">Introducing</span>
+                <span className="block font-bold italic">Food for the Soul Kitchen</span>
+                <span className="mt-2 block font-bold italic text-[0.55em] leading-relaxed text-[#6d5232] sm:text-[0.5em]">
+                  Only for those in Gurgaon!
+                </span>
               </h2>
-
-              <p className="mx-auto max-w-2xl font-[family-name:var(--font-display)] text-[1.2rem] leading-relaxed text-[#6d5232] sm:text-[1.4rem]">
-                Only for those in Gurgaon!
-              </p>
             </div>
 
             <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,246,234,0.92)_100%)] shadow-[0_20px_50px_var(--shadow)]">
