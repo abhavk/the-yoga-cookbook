@@ -89,14 +89,14 @@ export default function FoodLog() {
 
             <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,246,234,0.92)_100%)] shadow-[0_20px_50px_var(--shadow)]">
               <div className="grid gap-0 lg:grid-cols-[0.98fr_1.02fr]">
-                <div className="relative h-80 sm:h-96 lg:h-full lg:order-2">
+                <div className="relative mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-[1.5rem] sm:max-w-[380px] lg:order-2 lg:my-10 lg:mr-10 lg:ml-auto">
                   <img
                     src="/parippu.jpg"
                     alt="A richly styled dish from the Food for the Soul cookbook"
                     className="h-full w-full object-cover"
                     style={{
                       filter: "saturate(0.96) contrast(0.98) brightness(1.01)",
-                      objectPosition: "center center",
+                      objectPosition: "center 20%",
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2a2118]/18 via-transparent to-transparent" />
