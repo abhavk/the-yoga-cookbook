@@ -118,6 +118,7 @@ export default function FoodLog() {
 
                     <p className="font-[family-name:var(--font-display)] text-[1.18rem] text-brass-dark">
                       Arun
+                      +91 9810645850
                     </p>
                   </div>
                 </div>
