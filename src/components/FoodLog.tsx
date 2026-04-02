@@ -71,7 +71,7 @@ export default function FoodLog() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,246,234,0.92)_100%)] shadow-[0_20px_50px_var(--shadow)]">
+          <div className="mt-6 overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,246,234,0.92)_100%)] shadow-[0_20px_50px_var(--shadow)] lg:mt-10">
             <div className="grid gap-0 lg:grid-cols-[0.98fr_1.02fr]">
               <div className="relative h-80 sm:h-96 lg:h-full lg:order-2">
                 <img
@@ -87,20 +87,22 @@ export default function FoodLog() {
               </div>
 
               <div className="px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12 lg:order-1">
-                <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-brass/15 bg-[rgba(255,250,243,0.9)] px-4 py-1.5 font-[family-name:var(--font-sans)] text-[0.76rem] font-semibold uppercase tracking-[0.16em] text-brass-dark shadow-[0_10px_30px_rgba(111,84,47,0.08)]">
-                  <span className="h-1.5 w-1.5 rounded-full bg-brass" />
-                  New from the kitchen
-                </p>
+                <div className="mb-8 max-w-3xl">
+                  <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-brass/15 bg-[rgba(255,250,243,0.9)] px-4 py-1.5 font-[family-name:var(--font-sans)] text-[0.82rem] font-semibold uppercase tracking-[0.16em] text-brass-dark shadow-[0_10px_30px_rgba(111,84,47,0.08)]">
+                    <span className="h-1.5 w-1.5 rounded-full bg-brass" />
+                    New from the kitchen
+                  </p>
 
-                <h3 className="max-w-2xl font-[family-name:var(--font-display)] text-[clamp(2rem,4.4vw,3.4rem)] font-medium leading-[0.98] tracking-[0.01em] text-brass-dark">
-                  Introducing Food for the Soul kitchen
-                </h3>
+                  <h2 className="max-w-3xl font-[family-name:var(--font-display)] text-[clamp(2.35rem,5vw,4.2rem)] font-medium leading-[0.95] tracking-[0.01em] text-brass-dark">
+                    Introducing Food for the Soul kitchen
+                  </h2>
 
-                <p className="mt-3 font-[family-name:var(--font-display)] text-[1.08rem] italic leading-relaxed text-[#7a6347] sm:text-[1.18rem]">
-                  Only for those in Gurgaon!
-                </p>
+                  <p className="mt-4 max-w-2xl font-[family-name:var(--font-display)] text-[1.2rem] leading-relaxed text-[#6d5232] sm:text-[1.4rem]">
+                    Only for those in Gurgaon!
+                  </p>
+                </div>
 
-                <div className="mt-6 space-y-5 font-[family-name:var(--font-body)] text-[1.08rem] leading-[1.82] text-[#5f4b37] sm:text-[1.13rem] lg:text-[1.16rem]">
+                <div className="space-y-5 font-[family-name:var(--font-body)] text-[1.08rem] leading-[1.82] text-[#5f4b37] sm:text-[1.13rem] lg:text-[1.16rem]">
                   <p>
                     Those who have eating at my table, those who have come to our retreats, those who have asked advice for turning their health around &ndash; I have good news!
                   </p>
