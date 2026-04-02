@@ -75,7 +75,7 @@ export default function FoodLog() {
             <div className="grid gap-0 lg:grid-cols-[0.98fr_1.02fr]">
               <div className="relative h-80 sm:h-96 lg:h-full lg:order-2">
                 <img
-                  src="/Inji-Curry.png"
+                  src="/parippu.jpg"
                   alt="A richly styled dish from the Food for the Soul cookbook"
                   className="h-full w-full object-cover"
                   style={{
