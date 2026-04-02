@@ -105,7 +105,7 @@ export default function FoodLog() {
                 <div className="px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12 lg:order-1">
                   <div className="space-y-5 font-[family-name:var(--font-body)] text-[1.08rem] leading-[1.82] text-[#5f4b37] sm:text-[1.13rem] lg:text-[1.16rem]">
                     <p>
-                      Those who have eating at my table, those who have come to our retreats, those who have asked advice for turning their health around &ndash; I have good news!
+                      Those who have eaten at my table, those who have come to our retreats, those who have asked advice for turning their health around &ndash; I have good news!
                     </p>
 
                     <p>
