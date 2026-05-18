@@ -73,52 +73,79 @@ export default function FoodLog() {
 
           <div>
             <div className="mx-auto mb-8 max-w-3xl text-center lg:mb-10">
-              <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-brass/15 bg-[rgba(255,250,243,0.9)] px-4 py-1.5 font-[family-name:var(--font-sans)] text-[0.76rem] font-semibold uppercase tracking-[0.16em] text-brass-dark shadow-[0_10px_30px_rgba(111,84,47,0.08)]">
+              <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-brass/15 bg-[rgba(255,250,243,0.9)] px-4 py-1.5 font-[family-name:var(--font-sans)] text-[0.82rem] font-semibold uppercase tracking-[0.16em] text-brass-dark shadow-[0_10px_30px_rgba(111,84,47,0.08)]">
                 <span className="h-1.5 w-1.5 rounded-full bg-brass" />
-                New from the kitchen
+                Food Log #2: 15-5-2026
               </p>
 
               <h2 className="mx-auto mb-4 max-w-3xl font-[family-name:var(--font-display)] text-[clamp(2.35rem,5vw,4.2rem)] font-medium leading-[0.95] tracking-[0.01em] text-brass-dark">
-                <span className="block">Introducing</span>
-                <span className="block">Food for the Soul Kitchen</span>
-                <span className="mt-2 block font-bold italic text-[0.55em] leading-relaxed text-[#6d5232] sm:text-[0.5em]">
-                  Only for those in Gurgaon!
-                </span>
+                Is the salt okay?
               </h2>
+
+              <p className="mx-auto max-w-2xl font-[family-name:var(--font-display)] text-[1.2rem] leading-relaxed text-[#6d5232] sm:text-[1.4rem]">
+                The chef needs to know &ndash; please do tell them so that they can be in peace!
+              </p>
             </div>
 
-            <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,246,234,0.92)_100%)] shadow-[0_20px_50px_var(--shadow)]">
-              <div className="grid gap-0 lg:grid-cols-[0.98fr_1.02fr]">
-                <div className="relative mx-auto aspect-square w-full max-w-[320px] overflow-hidden rounded-[1.5rem] sm:max-w-[380px] lg:order-2 lg:my-10 lg:mr-10 lg:ml-auto">
+            <div className="overflow-hidden rounded-[var(--radius-xl)] border border-brass/[0.12] bg-[linear-gradient(180deg,rgba(255,252,247,0.94)_0%,rgba(255,248,239,0.9)_100%)] shadow-[0_20px_50px_var(--shadow)]">
+              <div className="grid gap-0 lg:grid-cols-[1.02fr_0.98fr]">
+                <div className="relative h-80 sm:h-96 lg:h-full lg:order-2">
                   <img
                     src="/parippu.jpg"
-                    alt="A richly styled dish from the Food for the Soul cookbook"
+                    alt="A comforting bowl of dal from the cookbook, evoking the warmth of a lovingly cooked meal"
                     className="h-full w-full object-cover"
                     style={{
-                      filter: "saturate(0.96) contrast(0.98) brightness(1.01)",
-                      objectPosition: "center 20%",
+                      filter: "saturate(0.95) contrast(0.98) brightness(1.02)",
+                      objectPosition: "center 28%",
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#2a2118]/18 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#2a2118]/22 via-transparent to-transparent" />
+                  <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/35 bg-[rgba(39,28,18,0.48)] px-4 py-3 text-left text-[0.88rem] leading-relaxed text-white shadow-[0_12px_35px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:inset-x-6 sm:bottom-6 sm:text-[0.95rem] lg:hidden">
+                    Tell the cook the truth they need most: yes, the food is a blessing.
+                  </div>
                 </div>
 
                 <div className="px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12 lg:order-1">
+                  <div className="mb-6 hidden rounded-[1.75rem] border border-brass/12 bg-[rgba(255,252,247,0.88)] p-5 shadow-[0_16px_40px_rgba(111,84,47,0.08)] lg:block">
+                    <p className="font-[family-name:var(--font-display)] text-[1.28rem] leading-relaxed text-brass-dark xl:text-[1.4rem]">
+                      “Is the salt okay?”
+                    </p>
+                    <p className="mt-2 text-[0.96rem] leading-relaxed text-[#7a6347]">
+                      The quiet question behind every lovingly prepared meal.
+                    </p>
+                  </div>
+
                   <div className="space-y-5 font-[family-name:var(--font-body)] text-[1.08rem] leading-[1.82] text-[#5f4b37] sm:text-[1.13rem] lg:text-[1.16rem]">
-                    <p>
-                      Those who have eaten at my table, those who have come to our retreats, those who have asked advice for turning their health around &ndash; I have good news!
+                    <p className="text-[1.12rem] leading-[1.88] text-brass-dark sm:text-[1.18rem]">
+                      <span className="font-[family-name:var(--font-display)] text-[1.08em] font-semibold tracking-[0.02em] text-[#8b6a3f]">Is the salt okay?</span> The chef needs to know &ndash; please do tell them so that they can be in peace!
                     </p>
 
                     <p>
-                      Under my supervision, a central kitchen (my home!) has been delivering food to others homes, for the past six months. The recipes? From the cookbook of course. The results are wonderful and encouraging. And therefore, it is now public.
+                      Amma would ask me something while I was eating. Sometimes after I finished. And sometimes she would herself bring up feedback about the meal. I was absent minded in my replies most of the time. But it mattered to her, what I said.
                     </p>
 
                     <p>
-                      Now, you can order too! Delivered fresh twice a day, to a fixed menu. Message or call for details and delivery!
+                      Is the salt okay? Yes Ma, it is fine. Actually the bhindi was a bit over ripe, Amma would counter. I had to cook it a bit more and add extra oil. She is looking for feedback. Was the food okay. Yes Ma, everything is really nice.
                     </p>
 
-                    <p className="font-[family-name:var(--font-display)] text-[1.18rem] text-brass-dark">
-                      Arun
-                      +91 9810645850
+                    <p>
+                      It is a blessing to sit in front of food. An experience like no other. Ask someone who is starving. I felt an overwhelming sense of gratitude every time Amma put food on the table. And a feeling of how much she put into cooking, how hard it is to keep the food factory going, day after day, week after week month after month.
+                    </p>
+
+                    <p>
+                      And how, while she cribbed a lot, she made magic, every single time.
+                    </p>
+
+                    <p className="border-l-2 border-brass/25 pl-4 text-[#6a543d] sm:pl-5">
+                      Is the salt okay? Please let the person who is cooking know &ndash; yes it is fine. The food is great. Even if it is not. Don&rsquo;t complain. Things can be corrected. Later. For now, the food on table, is good. Too good.
+                    </p>
+
+                    <p>
+                      A blessing, a present, a gift wrapped in the chef&rsquo;s best intention, labour and love. Let the chef have your gratitude &ndash; give them your thanks &ndash; and those words that make all the difference.
+                    </p>
+
+                    <p className="font-[family-name:var(--font-display)] text-[1.18rem] leading-relaxed text-brass-dark sm:text-[1.24rem]">
+                      Thank you &ndash; the food was great!
                     </p>
                   </div>
                 </div>
