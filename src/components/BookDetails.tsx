@@ -91,7 +91,7 @@ export default function BookDetails() {
                 <>
                   <div className="flex items-center justify-between gap-4 border-b border-brass/10 px-6 py-3 sm:px-8">
                     <p className="font-[family-name:var(--font-display)] text-[1rem] leading-none text-brass-dark">
-                      Secure checkout for your pre-order
+                      Secure checkout for your order
                     </p>
                     <div className="flex items-center gap-2">
                       <button
