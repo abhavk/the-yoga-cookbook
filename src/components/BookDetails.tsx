@@ -196,7 +196,7 @@ export default function BookDetails() {
                         </span>
                       </div>
                       <p className="mt-0.5 font-[family-name:var(--font-sans)] text-[0.6rem] font-medium uppercase tracking-[0.14em] text-emerald-700/70">
-                        Exclusive pre-launch price
+                        Launch price
                       </p>
                     </div>
                     <div className="ml-auto shrink-0 text-center">
