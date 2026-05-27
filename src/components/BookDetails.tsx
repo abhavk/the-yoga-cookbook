@@ -192,7 +192,7 @@ export default function BookDetails() {
                           ₹999
                         </span>
                         <span className="font-[family-name:var(--font-display)] text-2xl font-semibold text-emerald-700 sm:text-3xl">
-                          ₹799
+                          ₹899
                         </span>
                       </div>
                       <p className="mt-0.5 font-[family-name:var(--font-sans)] text-[0.6rem] font-medium uppercase tracking-[0.14em] text-emerald-700/70">
