@@ -3,7 +3,7 @@
 import { type ReactNode, type MouseEvent } from "react";
 
 export const PAYMENT_URL = "https://rzp.io/rzp/JkHFut7Z";
-export const OPEN_CHECKOUT_EVENT = "preorder:open-checkout";
+export const OPEN_CHECKOUT_EVENT = "order:open-checkout";
 
 interface PreOrderButtonProps {
   children: ReactNode;
