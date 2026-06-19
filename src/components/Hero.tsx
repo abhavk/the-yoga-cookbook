@@ -58,26 +58,38 @@ export default function Hero() {
         {/* Text column */}
         <div className="order-3 flex flex-col justify-center lg:order-2">
           <blockquote
-            className="relative mb-10 max-w-lg pl-6"
+            className="relative mb-10 max-w-xl overflow-hidden rounded-[2rem] border border-[rgba(139,106,63,0.16)] bg-[linear-gradient(135deg,rgba(255,252,247,0.96),rgba(247,239,228,0.9))] px-6 py-7 shadow-[0_18px_50px_rgba(111,84,47,0.12)] backdrop-blur-sm sm:px-8 sm:py-8"
             style={{ animation: "breatheIn 0.8s ease-out 0.15s both" }}
           >
-            <div className="absolute top-1 bottom-1 left-0 w-[2px] rounded-full bg-gradient-to-b from-brass/40 via-brass/20 to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(176,138,85,0.2),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(139,106,63,0.12),transparent_30%)]" />
+            <div className="pointer-events-none absolute right-5 top-4 font-[family-name:var(--font-display)] text-7xl leading-none text-brass/12 sm:text-8xl">
+              &rdquo;
+            </div>
+            <div className="relative">
+              <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-brass/12 bg-white/55 px-3.5 py-1.5 shadow-[0_8px_24px_rgba(111,84,47,0.08)]">
+                <span className="h-1.5 w-1.5 rounded-full bg-brass" />
+                <span className="font-[family-name:var(--font-sans)] text-[0.68rem] font-medium uppercase tracking-[0.22em] text-brass-dark/75">
+                  From the book
+                </span>
+              </div>
 
-            <p className="font-[family-name:var(--font-display)] text-[clamp(1.4rem,3vw,2rem)] font-light leading-snug tracking-wide text-brass-dark italic">
-              &ldquo;Every recipe is an art form. It is sacred. Let the canvas
-              express your creativity, your sacredness, your love and care for
-              yourself, and for others. Allow the recipes to work on you, rather
-              than you work on them.&rdquo;
-            </p>
-            <footer
-              className="mt-5"
-              style={{ animation: "breatheIn 0.8s ease-out 0.4s both" }}
-            >
-              <div className="mb-2.5 h-px w-6 bg-gradient-to-r from-brass/35 to-transparent" />
-              <span className="font-[family-name:var(--font-sans)] text-xs font-normal uppercase tracking-[0.18em] text-text-muted/70">
-                Arun Pandala
-              </span>
-            </footer>
+              <p className="relative border-l border-brass/18 pl-5 font-[family-name:var(--font-display)] text-[clamp(1.55rem,3vw,2.25rem)] font-light leading-[1.24] tracking-[0.01em] text-brass-dark italic sm:pl-6">
+                <span className="absolute -left-2.5 -top-2 font-[family-name:var(--font-display)] text-5xl not-italic leading-none text-brass/28 sm:-left-3 sm:text-6xl">
+                  &ldquo;
+                </span>
+                Every recipe is an art form. It is sacred. Let the canvas express your creativity, your sacredness, your love and care for yourself, and for others. Allow the recipes to work on you, rather than you work on them.
+              </p>
+
+              <footer
+                className="mt-6 flex items-center gap-3"
+                style={{ animation: "breatheIn 0.8s ease-out 0.4s both" }}
+              >
+                <div className="h-px w-10 bg-gradient-to-r from-brass/45 to-transparent" />
+                <span className="rounded-full bg-brass-dark/[0.04] px-3 py-1 font-[family-name:var(--font-sans)] text-xs font-medium uppercase tracking-[0.18em] text-text-muted/80">
+                  Arun Pandala
+                </span>
+              </footer>
+            </div>
           </blockquote>
 
           <div
