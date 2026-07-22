@@ -7,10 +7,10 @@ export default function FromTheBook() {
             From the Book
           </p>
           <h2 className="font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3.3rem)] font-medium leading-tight text-brass-dark">
-            The Kitchen That Raised Me
+            What This Book Carries of Me
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[1rem] leading-relaxed text-text-muted sm:text-[1.08rem]">
-            A personal blog-style passage inspired by the heart of <em>Food for the Soul</em>.
+            A personal blog-style reflection on the memories, values, and inner life behind <em>Food for the Soul</em>.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function FromTheBook() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#2a2118]/35 via-[#2a2118]/8 to-transparent" />
               <div className="absolute inset-x-5 bottom-5 rounded-[1.5rem] border border-white/30 bg-[rgba(39,28,18,0.5)] px-5 py-4 text-white shadow-[0_14px_32px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:inset-x-6 sm:bottom-6">
                 <p className="font-[family-name:var(--font-display)] text-[1.2rem] leading-snug sm:text-[1.35rem]">
-                  “This book is not only about recipes. It is about memory, love, and the quiet grace of being nourished.”
+                  “If you want to know me, look at the love, memory, discipline, and devotion that shaped this book.”
                 </p>
                 <p className="mt-2 font-[family-name:var(--font-sans)] text-[0.72rem] uppercase tracking-[0.16em] text-white/80">
                   Arun Pandala
@@ -45,25 +45,25 @@ export default function FromTheBook() {
               <div className="space-y-5 text-[1.04rem] leading-[1.9] text-[#5f4b37] sm:text-[1.09rem]">
                 <p className="text-brass-dark">
                   <span className="float-left mr-3 mt-1 font-[family-name:var(--font-display)] text-[3.2rem] leading-none text-brass-dark sm:text-[3.6rem]">
-                    I
+                    T
                   </span>
-                  have often felt that the kitchen is one of the most sacred rooms in a home. For me, it was never only a place where meals were prepared. It was where care became visible, where discipline softened into tenderness, and where love took a form that could be tasted, shared, and remembered.
+                  his book may be filled with recipes, but if you read it closely, you will also find me in its silences, in its longings, and in the values that shaped my life. <em>Food for the Soul</em> is not simply a collection of dishes I wanted to share. It is a portrait of what formed me &mdash; the home I came from, the mother who nourished me, and the inner world that taught me to see food as an expression of love.
                 </p>
 
                 <p>
-                  I grew up watching my Amma cook with extraordinary sincerity. Nothing about it was casual. Even the simplest meal carried attention, rhythm, and devotion. She did not merely feed people. She nourished them. In time, I began to understand that her cooking was a language of service &mdash; quiet, unannounced, and deeply transformative.
+                  I was deeply shaped by Amma. Her presence in the kitchen was never hurried, careless, or mechanical. She cooked with attention. She cooked with dignity. She cooked with a sincerity that made even an ordinary meal feel meaningful. Watching her, I learned that food could carry tenderness, responsibility, generosity, and grace. Long before I put these things into words, I was already receiving them through her hands.
                 </p>
 
                 <p>
-                  Much later, through my own life in yoga, I recognized the same truth in another form. Yoga teaches awareness, reverence, discipline, and presence. Amma&rsquo;s kitchen held all of that naturally. The way she selected ingredients, balanced flavours, and served others with thoughtfulness was, to me, a living expression of yogic wisdom.
+                  In many ways, this book tells you what matters to me. It tells you that I value depth over display. That I believe devotion belongs in everyday life. That memory is sacred. That nourishment is never only physical. The flavours of Kerala in these pages are not there merely because they are delicious, though they certainly are. They are there because they are bound to my identity, my inheritance, and my sense of belonging.
                 </p>
 
                 <p>
-                  <em>Food for the Soul</em> was born from that recognition. This book is my offering to her memory, to Kerala&rsquo;s deeply rooted culinary tradition, and to everyone who has ever felt loved through a meal. The recipes matter, of course. But beyond the recipes is something even more essential: the invitation to cook with sensitivity, to eat with gratitude, and to let food become a vehicle for connection.
+                  My life in yoga also lives quietly inside this book. Yoga has taught me to honour rhythm, awareness, humility, and presence. When I think of Amma&rsquo;s way of cooking, I recognize those same qualities. There was concentration in it. Reverence in it. A kind of selfless offering in it. So when I share these recipes, I am also sharing a way of seeing life: to do simple things with love, to serve with attentiveness, and to let daily acts become sacred.
                 </p>
 
                 <p>
-                  If these pages carry any warmth, it is because they come from a life shaped by Amma&rsquo;s hands, Amma&rsquo;s kitchen, and Amma&rsquo;s love. In that sense, this book is also a portrait of me &mdash; of what nourished me, what formed me, and what I now hope to pass on.
+                  If someone were to ask me, &ldquo;Who are you in this book?&rdquo; I would say: I am in its gratitude. I am in its remembrance. I am in its affection for Amma, in its respect for tradition, and in its hope that food can still bring people closer to themselves and to one another. This book carries my story gently, but truthfully. And perhaps that is what makes it so personal to me.
                 </p>
               </div>
             </div>
