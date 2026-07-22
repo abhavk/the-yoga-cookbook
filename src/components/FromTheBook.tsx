@@ -7,7 +7,7 @@ export default function FromTheBook() {
             From the Book
           </p>
           <h2 className="font-[family-name:var(--font-display)] text-[clamp(2rem,4vw,3.3rem)] font-medium leading-tight text-brass-dark">
-            The Kitchen That Raised Me
+            the kitchen that raised me
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[1rem] leading-relaxed text-text-muted sm:text-[1.08rem]">
             A personal blog-style passage inspired by the heart of <em>Food for the Soul</em>.
