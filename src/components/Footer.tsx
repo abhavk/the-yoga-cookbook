@@ -22,7 +22,7 @@ export default function Footer() {
                 Explore
               </p>
               <div className="space-y-2">
-                {["About", "Recipes", "The Book", "Author"].map((link) => (
+                {["About", "From the Book", "Recipes", "The Book", "Author"].map((link) => (
                   <a
                     key={link}
                     href={`#${link.toLowerCase().replace(/\s/g, "-")}`}

@@ -11,7 +11,7 @@ export default function Header() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {["About", "The Book", "Recipes", "Author"].map((item) => (
+          {["About", "From the Book", "The Book", "Recipes", "Author"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().replace(/\s/g, "-")}`}

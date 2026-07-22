@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Recipes from "@/components/Recipes";
 import FoodLog from "@/components/FoodLog";
 import BookDetails from "@/components/BookDetails";
+import FromTheBook from "@/components/FromTheBook";
 import AuthorBio from "@/components/AuthorBio";
 import Footer from "@/components/Footer";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <FromTheBook />
         <Recipes />
         <FoodLog />
         <BookDetails />
