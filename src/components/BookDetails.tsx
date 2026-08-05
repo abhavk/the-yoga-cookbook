@@ -3,17 +3,22 @@
 import { useEffect, useRef, useState } from "react";
 
 import PreOrderButton, {
+  INR_PAYMENT_URL,
   OPEN_CHECKOUT_EVENT,
-  PAYMENT_URL,
+  USD_PAYMENT_URL,
 } from "./PreOrderButton";
+
+type CurrencyOption = "INR" | "USD" | null;
 
 export default function BookDetails() {
   const [isCheckoutVisible, setIsCheckoutVisible] = useState(false);
+  const [selectedCurrency, setSelectedCurrency] = useState<CurrencyOption>(null);
   const checkoutPanelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const openCheckout = () => {
       setIsCheckoutVisible(true);
+      setSelectedCurrency(null);
 
       window.requestAnimationFrame(() => {
         if (window.innerWidth < 1024) {
@@ -38,9 +43,12 @@ export default function BookDetails() {
     <section id="the-book" className="scroll-mt-[-10px] py-14 lg:py-20">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <p className="mx-auto max-w-4xl text-center font-[family-name:var(--font-sans)] text-[0.98rem] leading-relaxed text-text-muted">
-            Be among the first to support this book project. A pioneer helps open the way for others to follow. A part of the proceeds from the book will go to the underprivileged but magical chefs in the kitchen who have never-ending troubles and large families to feed.
-            <br />
-            I thank you on their behalf.
+          Be among the first to support this book project. A pioneer helps open
+          the way for others to follow. A part of the proceeds from the book
+          will go to the underprivileged but magical chefs in the kitchen who
+          have never-ending troubles and large families to feed.
+          <br />
+          I thank you on their behalf.
         </p>
         <div className="mx-auto my-6 h-px w-16 bg-gradient-to-r from-transparent via-brass/35 to-transparent sm:my-8" />
         {/* Section kicker */}
@@ -67,13 +75,17 @@ export default function BookDetails() {
                   <img
                     src="/book-cover.png"
                     alt="Food for the Soul — book cover"
-                    className="relative z-10 w-[64.8%] rounded-xl shadow-[0_20px_60px_rgba(45,38,33,0.25)] mx-auto"
-                    style={{ filter: "saturate(0.9) contrast(0.96) brightness(1.03)" }}
+                    className="relative z-10 mx-auto w-[64.8%] rounded-xl shadow-[0_20px_60px_rgba(45,38,33,0.25)]"
+                    style={{
+                      filter: "saturate(0.9) contrast(0.96) brightness(1.03)",
+                    }}
                   />
                   <div className="absolute -bottom-3 left-1/2 h-6 w-4/5 -translate-x-1/2 rounded-full bg-brass-dark/10 blur-xl" />
                 </div>
                 <p className="mt-6 text-center text-sm leading-relaxed font-bold text-text-muted sm:text-base">
-                  If you need more copies for gifting or sharing with family and friends, simply click the + button to reach your desired quantity before clicking Pay.
+                  If you need more copies for gifting or sharing with family and
+                  friends, simply click the + button to reach your desired
+                  quantity before clicking Pay.
                 </p>
               </div>
             </div>
@@ -91,7 +103,7 @@ export default function BookDetails() {
                 <>
                   <div className="flex items-center justify-between gap-4 border-b border-brass/10 px-6 py-3 sm:px-8">
                     <p className="font-[family-name:var(--font-display)] text-[1rem] leading-none text-brass-dark">
-                      Secure checkout for your order
+                      Choose your currency to continue
                     </p>
                     <div className="flex items-center gap-2">
                       <button
@@ -120,7 +132,10 @@ export default function BookDetails() {
                       </button>
                       <button
                         type="button"
-                        onClick={() => setIsCheckoutVisible(false)}
+                        onClick={() => {
+                          setIsCheckoutVisible(false);
+                          setSelectedCurrency(null);
+                        }}
                         className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-brass/15 text-brass-dark/70 transition-colors hover:bg-brass/5 hover:text-brass-dark"
                         aria-label="Close checkout"
                       >
@@ -140,29 +155,72 @@ export default function BookDetails() {
                     </div>
                   </div>
 
-                  <div className="min-h-0 flex-1 bg-white">
-                    <iframe
-                      title="Food for the Soul secure checkout"
-                      src={PAYMENT_URL}
-                      className="h-full min-h-[460px] w-full"
-                      loading="lazy"
-                      allow="payment *; clipboard-write"
-                    />
+                  <div className="border-b border-brass/10 px-6 py-5 sm:px-8">
+                    <p className="mb-4 text-sm text-text-muted">
+                      Select INR to continue with the India checkout, or choose
+                      USD to pay via PayPal.
+                    </p>
+                    <div className="flex flex-col gap-3 sm:flex-row">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedCurrency("INR")}
+                        className={
+                          selectedCurrency === "INR"
+                            ? "inline-flex items-center justify-center rounded-full border border-[rgba(111,84,47,0.45)] bg-gradient-to-b from-brass-light to-brass-dark px-5 py-3 text-sm font-medium text-[#fffaf2] shadow-lg transition-all"
+                            : "inline-flex items-center justify-center rounded-full border border-brass/20 bg-white px-5 py-3 text-sm font-medium text-brass-dark transition-colors hover:border-brass/35 hover:bg-brass/5"
+                        }
+                      >
+                        Pay in INR
+                      </button>
+                      <a
+                        href={USD_PAYMENT_URL}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center justify-center rounded-full border border-brass/20 bg-white px-5 py-3 text-sm font-medium text-brass-dark transition-colors hover:border-brass/35 hover:bg-brass/5"
+                      >
+                        Pay in USD via PayPal
+                      </a>
+                    </div>
                   </div>
 
+                  {selectedCurrency === "INR" ? (
+                    <>
+                      <div className="min-h-0 flex-1 bg-white">
+                        <iframe
+                          title="Food for the Soul secure checkout"
+                          src={INR_PAYMENT_URL}
+                          className="h-full min-h-[460px] w-full"
+                          loading="lazy"
+                          allow="payment *; clipboard-write"
+                        />
+                      </div>
 
-                  <p className="border-t border-brass/10 px-6 py-3 text-sm text-text-muted sm:px-8">
-                    If the checkout does not load in this box,{" "}
-                    <a
-                      href={PAYMENT_URL}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-medium text-brass-dark underline decoration-brass/35 underline-offset-3"
-                    >
-                      open the secure checkout in a new tab
-                    </a>
-                    .
-                  </p>
+                      <p className="border-t border-brass/10 px-6 py-3 text-sm text-text-muted sm:px-8">
+                        If the checkout does not load in this box,{" "}
+                        <a
+                          href={INR_PAYMENT_URL}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-medium text-brass-dark underline decoration-brass/35 underline-offset-3"
+                        >
+                          open the secure checkout in a new tab
+                        </a>
+                        .
+                      </p>
+                    </>
+                  ) : (
+                    <div className="flex flex-1 items-center justify-center px-6 py-12 text-center sm:px-8">
+                      <div className="max-w-md">
+                        <p className="font-[family-name:var(--font-display)] text-xl text-brass-dark">
+                          Choose INR or USD to continue
+                        </p>
+                        <p className="mt-3 text-sm leading-relaxed text-text-muted">
+                          INR opens the embedded checkout below. USD takes you to
+                          the PayPal payment page in a new tab.
+                        </p>
+                      </div>
+                    </div>
+                  )}
                 </>
               ) : (
                 <>
@@ -228,7 +286,9 @@ export default function BookDetails() {
                     </svg>
                   </PreOrderButton>
                   <p className="mt-3 text-sm text-text-muted">
-                    *Packing and shipping is extra. The book is now available. I will personally communicate when it is shipped and let you know the charges then.
+                    *Packing and shipping is extra. The book is now available. I
+                    will personally communicate when it is shipped and let you
+                    know the charges then.
                     <br />
                     Arun
                   </p>
