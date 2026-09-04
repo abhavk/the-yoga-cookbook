@@ -3,7 +3,7 @@
 import { type ReactNode, type MouseEvent } from "react";
 
 export const INR_PAYMENT_URL = "https://rzp.io/rzp/JkHFut7Z";
-export const USD_PAYMENT_URL = "https://www.paypal.com/paypalme/ARUNPANDALAGurgaon";
+export const USD_PAYMENT_URL = "https://www.paypal.com/ncp/payment/8RQHNCV634Z42";
 export const OPEN_CHECKOUT_EVENT = "order:open-checkout";
 
 interface PreOrderButtonProps {
